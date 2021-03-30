@@ -27,11 +27,11 @@
                     <i id="user" class="fas fa-user-circle fa-9x"></i>
                 </div>
                 <div id="bottom-box">
-                    <h1>Jane Doe</h1>
+                    <h1 id="fullName">Jane Doe</h1>
                     <h2 id="location"><i class="fas fa-map-marker-alt"></i> Seattle</h2>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the internet!</p>
-                    <a href="#" id="link"><h3 id="link"><i class="fas fa-cog"></i> <span>edit profile</span></h3></a>
+                    <a href="#" id="link"><h3 id="link"><i class="fas fa-cog"></i> <span id="edit" onclick="changeName()">edit profile</span></h3></a>
                 </div>
             </div>
             <div id="education">
@@ -52,8 +52,8 @@
                     <h1>Connection Requests</h1>
                 </div>
                 <div id="bottom-box3">
-                    <h1 id="person"><i class="fas fa-user-circle fa-1x"></i> Todd E</h1>
-                    <h1 id="person"><i class="fas fa-user-circle fa-1x"></i> Phil K</h1>
+                    <h1 id="person p1"><i class="fas fa-user-circle fa-1x"></i> Todd E <i onclick="add1(this)" class="far fa-check-circle"></i><i onclick="remove1(this)" class="far fa-times-circle"></i></h1>
+                    <h1 id="person p2"><i class="fas fa-user-circle fa-1x"></i> Phil K <i onclick="add1(this)" class="far fa-check-circle"></i><i onclick="remove1(this)" class="far fa-times-circle"></i></h1>
                 </div>
             </div>
             <div id="connections">
@@ -73,5 +73,6 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
